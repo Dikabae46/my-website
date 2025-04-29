@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pernikahan Dika & Najwa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #0e0e0e;
+      --white: #fefefe;
+      --cyan: #00e5ff;
+      --gray: #2e2e2e;
+      --green: #00ff95;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(120deg, var(--gray), var(--black));
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      color: var(--cyan);
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 12px;
+      color: #ccc;
+    }
+
+    .slider {
+      max-width: 100%;
+      overflow: hidden;
+      margin: 30px auto;
+      border-radius: 18px;
+      box-shadow: 0 0 20px var(--cyan);
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 15s infinite;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      filter: grayscale(20%) brightness(0.85);
+    }
+
+    @keyframes slide {
+      0%, 33% { transform: translateX(0); }
+      34%, 66% { transform: translateX(-100%); }
+      67%, 99% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: var(--green);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .info-box {
+      background: var(--gray);
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto 50px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px var(--cyan);
+      transition: transform 0.3s ease;
+    }
+
+    .info-box:hover {
+      transform: scale(1.03);
+    }
+
+    .info-box p {
+      margin: 12px 0;
+      font-size: 1.1rem;
+    }
+
+    .info-box a {
+      color: var(--cyan);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--cyan);
+      color: var(--black);
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-family: 'Orbitron', sans-serif;
+      margin-top: 25px;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--green);
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #101010;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 1rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dika & Najwa</h1>
+    <p>Dengan penuh cinta, kami mengundang Anda untuk hadir di hari bahagia kami.</p>
+    <a href="#lokasi" class="btn">Lihat Lokasi</a>
+  </header>
+
+  <div class="slider">
+    <div class="slides">
+      <div class="slide"><img src="https://source.unsplash.com/1200x500/?wedding,night" alt="Slide 1"></div>
+      <div class="slide"><img src="https://source.unsplash.com/1200x500/?couple,romantic" alt="Slide 2"></div>
+      <div class="slide"><img src="https://source.unsplash.com/1200x500/?wedding,dark" alt="Slide 3"></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-title">Akad Nikah</div>
+    <div class="info-box">
+      <p><strong>Tanggal:</strong> Sabtu, 14 Juni 2025</p>
+      <p><strong>Waktu:</strong> 09.00 WIB</p>
+      <p><strong>Tempat:</strong> Masjid Agung Kota Cinta</p>
+    </div>
+
+    <div class="section-title">Resepsi</div>
+    <div class="info-box">
+      <p><strong>Tanggal:</strong> Sabtu, 14 Juni 2025</p>
+      <p><strong>Waktu:</strong> 13.00 - 17.00 WIB</p>
+      <p><strong>Tempat:</strong> Gedung Serbaguna Harapan Bahagia</p>
+    </div>
+  </section>
+
+  <section id="lokasi">
+    <div class="section-title">Lokasi Acara</div>
+    <div class="info-box">
+      <p><a href="https://www.google.com/maps/place/Gedung+Serbaguna+Harapan+Bahagia" target="_blank">Klik di sini untuk membuka Google Maps</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Terima kasih atas doa dan restunya. Kehadiran Anda adalah kebahagiaan bagi kami.</p>
+    <p><strong>Dika & Najwa</strong></p>
+  </footer>
+</body>
+</html>
